@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="controller.ProfinfoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../view/pics/info%202.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="286.0" layoutX="43.0" layoutY="67.0" opacity="0.32" stroke="BLACK" strokeType="INSIDE" width="518.0" />
+      <Label layoutX="64.0" layoutY="93.0" prefHeight="25.0" prefWidth="446.0" text="- Interest rate of monthly saving account is 0.4%" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5619047619047619">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="153.0" prefHeight="25.0" prefWidth="446.0" text="- Interest rate of fixed deposit account is:" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5619047619047619">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="192.0" prefHeight="25.0" prefWidth="210.0" text="    5% for 1 year" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5619047619047619">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="228.0" prefHeight="25.0" prefWidth="210.0" text="    5.22% for 3 years" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5619047619047619">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="266.0" prefHeight="25.0" prefWidth="210.0" text="    5.39% for 5 years" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5619047619047619">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="304.0" prefHeight="25.0" prefWidth="210.0" text="    6.35% for 10 years" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5619047619047619">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="back" layoutX="43.0" layoutY="24.0" mnemonicParsing="false" onAction="#back" opacity="0.74" prefHeight="4.0" prefWidth="42.0" style="-fx-background-color: #d3cbcb;" text="&lt;=">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

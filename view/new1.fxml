@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.New1Controller">
+   <children>
+      <ImageView fitHeight="529.0" fitWidth="731.0">
+         <image>
+            <Image url="@pics/1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccd1db" height="529.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="731.0">
+         <effect>
+            <DropShadow color="#7a6e41" height="68.44" radius="35.205" width="74.38">
+               <input>
+                  <GaussianBlur />
+               </input>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Text fill="#cdd2dd" layoutX="15.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Title Of Account" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Branch" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Branch Code" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter PIN" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Amount To Open Account">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Phone Number" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter  Address" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter CNIC number" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter District" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="15.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Province" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#ccd1db" layoutX="444.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are You Sure the Given Information Is Correct?" wrappingWidth="246.884765625">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="Confirmationbutton" layoutX="475.0" layoutY="387.0" mnemonicParsing="false" onAction="#confirmdetails" opacity="0.97" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #cdd2dd;" text="Yes">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <TextField fx:id="name" layoutX="238.0" layoutY="67.0" onKeyPressed="#enter" opacity="0.77" promptText="name" style="-fx-background-color: #f6f5f2;" />
+      <ChoiceBox fx:id="selectbranch" layoutX="238.0" layoutY="154.0" opacity="0.73" prefWidth="150.0" style="-fx-background-color: #f6f5f2;" />
+      <Label fx:id="brcode" layoutX="239.0" layoutY="193.0" prefHeight="25.0" prefWidth="59.0" />
+      <PasswordField fx:id="PIN" layoutX="239.0" layoutY="234.0" opacity="0.77" promptText="4-digit(xxxx)" style="-fx-background-color: #f6f5f2;" />
+      <TextField fx:id="amount" layoutX="239.0" layoutY="272.0" opacity="0.77" promptText="In numbers" style="-fx-background-color: #f6f5f2;" />
+      <TextField fx:id="phone" layoutX="237.0" layoutY="317.0" onKeyPressed="#enter_ph" opacity="0.77" promptText="11 digits" style="-fx-background-color: #f6f5f2;" />
+      <TextField fx:id="address" layoutX="237.0" layoutY="355.0" onAction="#enter_address" onKeyPressed="#enter_address" opacity="0.77" promptText="house#xxxx( )block#xx" style="-fx-background-color: #f6f5f2;" />
+      <TextField fx:id="CNIC" layoutX="237.0" layoutY="398.0" onKeyPressed="#enter_cnic" opacity="0.77" promptText="13 digits" style="-fx-background-color: #f6f5f2;" />
+      <TextField fx:id="district" layoutX="237.0" layoutY="435.0" onKeyPressed="#enter_dist" opacity="0.77" style="-fx-background-color: #f6f5f2;" />
+      <ChoiceBox fx:id="province" layoutX="236.0" layoutY="478.0" opacity="0.77" prefWidth="150.0" style="-fx-background-color: #f6f5f2;" />
+      <Button layoutX="311.0" layoutY="193.0" mnemonicParsing="false" onAction="#getbrcode" opacity="0.97" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #cdd2dd;" text="Get Code">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Text fill="#ccd1db" layoutX="444.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What Account Would you Like To Open?" wrappingWidth="224.697265625">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#cdd2dd" layoutX="15.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Account Number" wrappingWidth="186.2973648607731">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelacnumber" layoutX="236.0" layoutY="115.0" prefHeight="25.0" prefWidth="59.0" />
+      <Button layoutX="298.0" layoutY="116.0" mnemonicParsing="false" onAction="#getaccountnumber" opacity="0.97" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #cdd2dd;" text="Get Number">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Text fill="#ccd1db" layoutX="444.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If You have Fixed Deposit Account Mention Duration" wrappingWidth="224.697265625">
+         <font>
+            <Font name="Lucida Bright Demibold" size="11.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="duration" layoutX="465.0" layoutY="259.0" prefHeight="25.0" prefWidth="197.0" promptText="Select Duration" style="-fx-background-color: #e1ded5; -fx-border-color: #be9454;" />
+      <ComboBox fx:id="selectAccount" layoutX="465.0" layoutY="128.0" onAction="#handledisablityoffda" opacity="0.84" prefHeight="25.0" prefWidth="197.0" promptText="Select Account" style="-fx-background-color: #e1ded5; -fx-border-color: #be9454;" />
+      <Label fx:id="check" layoutX="492.0" layoutY="446.0" prefHeight="28.0" prefWidth="225.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="26.0" layoutY="10.0" mnemonicParsing="false" onAction="#back" opacity="0.73" prefHeight="37.0" prefWidth="69.0" style="-fx-background-color: #d3cbcb;" text="BACK">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label fx:id="check1" layoutX="475.0" layoutY="355.0" prefHeight="28.0" prefWidth="163.0" />
+      <Label layoutX="155.0" layoutY="9.0" prefHeight="50.0" prefWidth="431.0" text="Enter Your Account information" textFill="#cdd2dd">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

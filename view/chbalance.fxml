@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChbalanceController">
+   <children>
+      <ImageView fitHeight="420.0" fitWidth="746.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fdfaff00" height="420.0" layoutY="3.0" opacity="0.88" stroke="#fcfafaf7" strokeType="INSIDE" width="385.0" />
+      <TextField fx:id="brcode" layoutX="582.0" layoutY="219.0" onAction="#branchcode" style="-fx-background-color: #a69ea3; -fx-opacity: 0.9;" />
+      <TextField fx:id="acnumber" layoutX="582.0" layoutY="168.0" onAction="#accountnumber" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #a69ea3; -fx-opacity: 0.9;" />
+      <TextField fx:id="title" layoutX="582.0" layoutY="123.0" onAction="#titleofaccount" style="-fx-background-color: #a69ea3; -fx-opacity: 0.9;" />
+      <Label layoutX="452.0" layoutY="59.0" prefHeight="39.0" prefWidth="261.0" text="Enter Account Information" textFill="#4e4e4e" textOverrun="CLIP">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="123.0" prefHeight="25.0" prefWidth="136.0" text="Title Of Account" textFill="#4e4e4e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="168.0" prefHeight="25.0" prefWidth="136.0" text="Account Number" textFill="#4e4e4e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="214.0" prefHeight="25.0" prefWidth="136.0" text="Branch Code" textFill="#4e4e4e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="583.0" layoutY="357.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #a39aa0; -fx-font: lucida bright;" text="Submit">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.6428571428571428" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#35142a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label fx:id="check" layoutX="582.0" layoutY="400.0" prefHeight="28.0" prefWidth="149.0" textFill="#c90000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="type" layoutX="582.0" layoutY="314.0" opacity="0.5" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="425.0" layoutY="314.0" prefHeight="25.0" prefWidth="136.0" text="Account Type" textFill="#4e4e4e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="266.0" prefHeight="25.0" prefWidth="136.0" text="PIN Number" textFill="#4e4e4e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="360.0" prefHeight="25.0" prefWidth="136.0" text="Account Balance" textFill="#4e4e4e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pin" layoutX="582.0" layoutY="266.0" onAction="#pinnumber" opacity="0.9" style="-fx-background-color: #a69ea3;" />
+      <Text layoutX="75.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheking Balance" wrappingWidth="321.999993622303">
+         <font>
+            <Font name="Algerian" size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutY="-1.0" mnemonicParsing="false" onAction="#back" opacity="0.73" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #d3cbcb;">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/back.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="146.0" fitWidth="86.0" layoutX="287.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/checkbalance.png" />
+         </image>
+      </ImageView>
+      <Text fill="#dee6e8" fontSmoothingType="LCD" layoutX="129.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't Have Account? Sign up now" wrappingWidth="175.99999472498894">
+         <font>
+            <Font name="Arial Italic" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="312.0" layoutY="356.0" mnemonicParsing="false" onAction="#newaccount" prefHeight="57.0" prefWidth="71.0" />
+      <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="325.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/new.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

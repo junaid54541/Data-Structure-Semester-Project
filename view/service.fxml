@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServiceController">
+   <children>
+      <ImageView fitHeight="436.0" fitWidth="742.0">
+         <image>
+            <Image url="@pics/1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="383.0" layoutY="54.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="742.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <fill>
+            <LinearGradient endX="0.4095238095238095" endY="1.0" startX="0.4095238095238095">
+               <stops>
+                  <Stop color="#fafdff" />
+                  <Stop color="#fafdff" offset="0.007662835249042145" />
+                  <Stop color="#3f4346" offset="0.11494252873563218" />
+                  <Stop color="#3f4346" offset="0.8670458585140417" />
+                  <Stop color="#caced0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="wd_button" layoutX="372.0" layoutY="69.0" mnemonicParsing="false" onAction="#withdrawl" opacity="0.78" prefHeight="80.0" prefWidth="153.0">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.6190476190476191" startX="0.4095238095238095" startY="0.5428571428571428">
+               <stops>
+                  <Stop color="#292c2f" />
+                  <Stop color="#292c2f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/wi.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="dep_button" layoutX="550.0" layoutY="67.0" mnemonicParsing="false" onAction="#cashdeposit" opacity="0.78" prefHeight="80.0" prefWidth="153.0">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/deposit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="mpro_button" layoutX="372.0" layoutY="189.0" mnemonicParsing="false" onAction="#monthlyprofit" opacity="0.78" prefHeight="80.0" prefWidth="153.0">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/profit.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="newac_button" layoutX="372.0" layoutY="300.0" mnemonicParsing="false" onAction="#newaccount" opacity="0.78" prefHeight="71.0" prefWidth="330.0">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="12.0" />
+         </font>
+          <graphic>
+        <ImageView fitHeight="64.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@pics/new.png" />
+          </image>
+        </ImageView>
+      </graphic>
+      </Button>
+      <Button fx:id="other_button" layoutX="550.0" layoutY="188.0" mnemonicParsing="false" onAction="#others" opacity="0.78" prefHeight="80.0" prefWidth="153.0">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="20.0" layoutY="58.0" mnemonicParsing="false" onAction="#exit" opacity="0.73" prefHeight="47.0" prefWidth="57.0">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/back.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="56.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="742.0">
+         <fill>
+            <LinearGradient endX="0.4095238095238095" endY="1.0" startX="0.4095238095238095">
+               <stops>
+                  <Stop color="#cacdcf" />
+                  <Stop color="#cacdcf" offset="0.007662835249042145" />
+                  <Stop color="#3f4346" offset="0.13793103448275862" />
+                  <Stop color="#3f4346" offset="0.8555516056404784" />
+                  <Stop color="#caced0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="label" alignment="CENTER" layoutX="275.0" layoutY="15.0" prefHeight="25.0" prefWidth="171.0" style="-fx-alignment: centre;" text="Services">
+         <font>
+            <Font name="Lucida Bright Demibold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.6190476190476191" startX="0.4095238095238095" startY="0.5428571428571428">
+               <stops>
+                  <Stop color="#b0b7bd" />
+                  <Stop color="#b0b7bd" offset="0.5632183908045977" />
+                  <Stop color="#b0b7bd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Text layoutX="386.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Account" textAlignment="CENTER" wrappingWidth="297.9999935925007">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8333333333333334" startX="1.0">
+               <stops>
+                  <Stop color="#b5b9bc" />
+                  <Stop color="#b5b9bc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="369.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash Withdrawl" wrappingWidth="186.9999935925007">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="20.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8333333333333334" startX="1.0">
+               <stops>
+                  <Stop color="#b5b9bc" />
+                  <Stop color="#b5b9bc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="558.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash Deposit" wrappingWidth="152.9999935925007">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="20.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8333333333333334" startX="1.0">
+               <stops>
+                  <Stop color="#b5b9bc" />
+                  <Stop color="#b5b9bc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="370.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Profit" wrappingWidth="152.9999935925007">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="20.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8333333333333334" startX="1.0">
+               <stops>
+                  <Stop color="#b5b9bc" />
+                  <Stop color="#b5b9bc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="541.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information Hub" wrappingWidth="176.9999956046231">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="20.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8333333333333334" startX="1.0">
+               <stops>
+                  <Stop color="#b5b9bc" />
+                  <Stop color="#b5b9bc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="71.0" fitWidth="74.0" layoutX="590.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/information.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

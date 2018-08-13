@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="1.0">
+         <image>
+            <Image url="@pics/1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#484848" height="219.0" layoutX="279.0" layoutY="91.0" opacity="0.52" stroke="#484848" strokeType="INSIDE" width="248.0" />
+      <PasswordField fx:id="Adminpassword" layoutX="328.0" layoutY="164.0" onAction="#AdminPasswordTextField" opacity="0.63" prefHeight="37.0" prefWidth="149.0" promptText="xxxx(4-characters only)" style="-fx-background-color: #ffffff; -fx-cursor: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </PasswordField>
+      <Label fx:id="pass_correct" layoutX="317.0" layoutY="214.0" prefHeight="31.0" prefWidth="103.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.6904761904761905" startX="0.9380952380952381" startY="0.10952380952380952">
+               <stops>
+                  <Stop color="#2ffa14" />
+                  <Stop color="#f51c1c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="28.0" layoutY="24.0" mnemonicParsing="false" onAction="#back" opacity="0.73" prefHeight="37.0" prefWidth="70.0" style="-fx-background-color: #d3cbcb;" text="BACK">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="submitpass" layoutX="330.0" layoutY="234.0" mnemonicParsing="false" onAction="#Adminpasswordsubmit" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #07489d;" text="Submit">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="0.7471264367816092" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="316.0" layoutY="119.0" prefHeight="31.0" prefWidth="205.0" text="ENTER ADIMN PASSWORD" textAlignment="RIGHT" textFill="#bcc9cd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

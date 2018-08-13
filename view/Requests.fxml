@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="566.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="controller.RequestsController">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="570.0">
+         <image>
+            <Image url="@../view/pics/request.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="391.0" layoutX="138.0" layoutY="19.0" opacity="0.44" stroke="BLACK" strokeType="INSIDE" width="300.0">
+         <fill>
+            <LinearGradient endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#653941" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="146.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title of Account" wrappingWidth="112.13673179224133">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.719047619047619">
+               <stops>
+                  <Stop color="#b5848e" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="146.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch Code" wrappingWidth="112.13673067092896">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Button fx:id="yes" layoutX="159.0" layoutY="375.0" mnemonicParsing="false" onAction="#yesbutton" opacity="0.73" prefHeight="23.0" prefWidth="62.0" style="-fx-background-color: #000000;" text="Yes" textFill="#ae9191">
+         <effect>
+            <DropShadow color="#653941" height="41.75" radius="22.6" spread="0.72" width="50.65" />
+         </effect>
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="146.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Balance" wrappingWidth="112.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="146.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number" wrappingWidth="112.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="146.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="112.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="146.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNIC Number" wrappingWidth="112.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="146.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District" wrappingWidth="112.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="146.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Province" wrappingWidth="112.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="146.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="112.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text layoutX="145.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you want to continue?" wrappingWidth="242.13673273473978">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8380952380952381" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="#a4717c" />
+                  <Stop color="#100c22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="0.0" radius="1.7850000000000001" spread="0.93" width="9.14">
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Button fx:id="no" layoutX="266.0" layoutY="375.0" mnemonicParsing="false" onAction="#yesbutton" opacity="0.73" prefHeight="23.0" prefWidth="62.0" style="-fx-background-color: #000000;" text="No" textFill="#ae9191">
+         <effect>
+            <DropShadow color="#653941" height="41.75" radius="22.6" spread="0.72" width="50.65" />
+         </effect>
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="branchcode" layoutX="266.0" layoutY="59.0" onAction="#branchcode" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="title" layoutX="266.0" layoutY="25.0" onAction="#title" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="contact" layoutX="266.0" layoutY="128.0" onAction="#contact" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="accountbalance" layoutX="266.0" layoutY="94.0" onAction="#accountbalance" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="address" layoutX="266.0" layoutY="163.0" onAction="#address" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cnic" layoutX="266.0" layoutY="200.0" onAction="#cnic" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="district" layoutX="266.0" layoutY="235.0" onAction="#district" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="province" layoutX="266.0" layoutY="274.0" onAction="#province" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="accountype" layoutX="266.0" layoutY="308.0" onAction="#accountype" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="check" layoutX="349.0" layoutY="390.0" prefHeight="16.0" prefWidth="86.0" textFill="#f51d1d">
+         <font>
+            <Font name="Algerian" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="47.0" layoutY="22.0" mnemonicParsing="false" onAction="#back" opacity="0.73" prefHeight="4.0" prefWidth="42.0" style="-fx-background-color: #d3cbcb;" text="&lt;=">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>
